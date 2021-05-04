@@ -16,14 +16,14 @@ The data can be split into two groups: NBA team data and sports betting data.  T
 
 The data I acquired contains most basic and advanced team statistics from every game dating back to the 1994 season and moneyline and spread betting data from nine different sports book from the 2007 season on.
 
-- Code in [data_cleaning](https://github.com/gsyann/nba_game_models/tree/main/data_cleaning) folder  
+- Code in [data_acquisition_and_prep](https://github.com/gsyann/nba_game_models/tree/main/data_acquisition_and_prep) folder  
 
 
 ### Part 2: Designing Features and Creating the Dataset
 
 Now I had to format the data in a way where it would be useful for prediction.  I accomplished this by taking moving averages of each team’s previous games. This is so that the model will predict the outcomes of games from teams’ previous performances.  I included linearly weighted moving averages with different window sizes as well as exponential moving averages with different smoothing factor sizes. This gives me a wider variety of features to choose from when tuning the models.  I then created unique IDs for each game, which allowed me to merge in the betting data. 
 
-- Code in [data_cleaning](https://github.com/gsyann/nba_game_models/tree/main/data_cleaning) folder
+- Code in [data_acquisition_and_prep](https://github.com/gsyann/nba_game_models/tree/main/data_acquisition_and_prep) folder
 
 ### Part 3: Modeling
 
